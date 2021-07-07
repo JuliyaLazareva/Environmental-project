@@ -1,0 +1,279 @@
+/* Computer */
+.grid_1 { width: 6.5%; } 
+.grid_2 { width: 15%; } 
+.grid_3 { width: 23.5%; } 
+.grid_4 { width: 32%; } 
+.grid_5 { width: 40.5%; }
+.grid_6 { width: 49%; } 
+.grid_7 { width: 57.5%; } 
+.grid_8 { width: 66%; } 
+.grid_9 { width: 74.5%; } 
+.grid_10 { width: 83%; } 
+.grid_11 { width: 91.5%; } 
+.grid_12 { width: 100%; } 
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+	margin: 0 20px 20px 0;
+	float: left;
+	display: block;
+}
+
+.alpha			{margin-left:0;}
+.omega			{margin-right:0;}
+.gallery-list 	{margin-right:-25px;}
+
+.container{
+	width: 1000px;
+	max-width: 1000px;
+	margin: auto;
+	
+}
+
+
+
+.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}.clearfix:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}* html .clearfix,*:first-child+html .clearfix{zoom:1}
+
+@media only screen and (max-width: 1024px) {
+	.slide{background-attachment: scroll;background-position:0 0 !important;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+	.padding_slide1 {padding:150px 0 30px;}
+	.effects_1 {top:-73px;}
+	#slide1 h1 {font-size:60px;}
+	#slide1 h2 {padding-bottom:40px;}
+	#top_socials {margin-top:40px;}
+	
+	#slide3 p, #slide5 p, #slide7 p {font-size:40px;}
+	
+	.team_block h4 {font-size:16px;}
+	.team_soc li a {margin:0 2px;}
+	
+	.gallery-list {margin-left:109px;}
+	
+	.padding_slide5 {padding:100px 0;}
+	
+	.padding_slide7 {padding:100px 0 70px;}
+	
+	.padding_slide9 {padding:70px 0 40px;}
+	
+	.serv_inf p {font-size:14px;}
+	
+	#contact_block_rel {width:560px;}
+	#contact_block_rel .grid_5 {width:290px;
+	}
+	#contact_block_rel .grid_4 {width:228px;
+	}
+	
+	#footer {bottom:-103px;}
+/* _____________ menu ______________ */
+	.navigation li {margin-left:15px;padding:0 7px;}
+/* ____________ //menu _____________ */
+	
+	.container { width: 724px; }
+	.container .alpha        { margin-left: 0; margin-right: 5px; }
+	.container .omega        { margin-right: 0; }
+	.container .respond_pad {padding-right:20px;}
+	
+	.grid_3			{ width: 166px; }
+	.grid_4			{ width: 228px; }
+	.grid_5      		{ width: 290px; }
+	.grid_6      		{ width: 352px; }
+	.grid_7   		{ width: 414px; }
+	.grid_8   		{ width: 475px; }
+	.grid_9			{ width: 538px; }
+	.grid_12		{ width: 724px; }
+}
+
+@media only screen and (max-width: 767px) {
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	#logo {text-align:center;}
+	
+	.padding_slide1 {padding:155px 0 30px;}
+	.effects_1 {display:none;}
+	#slide1 h1 {font-size:36px;line-height:38px;}
+	#slide1 h2 {padding:40px 10px;margin:0 0 10px 0;font-size:16px;line-height:20px;}
+	#top_socials {margin-top:40px;}
+	
+	#slide2 .team_inf {width:193px !important;margin:-6px auto 0;}
+	
+	.padding_slide3 {padding:45px 0 30px;}
+	
+	#slide3 span {font-size:15px;line-height:20px;}
+	
+	.gallery-list {margin-left:95px;}
+	
+	.padding_slide5 {padding:40px 0;}
+	#slide5 span {font-size:15px;line-height:20px;}
+	
+	.padding_slide7 {padding:100px 0 70px;}
+	#slide7 span {font-size:15px;line-height:20px;}
+	
+	.padding_slide9 {padding:70px 0 40px;}
+	#slide9 p {font-size:26px;line-height:28px;}
+	
+	#testimonials_carousel .carousel-control.right {right:15px;}
+	
+	#slide3 p, #slide5 p, #slide7 p {font-size:24px;line-height:28px;}
+	
+	#filters li {margin-bottom:10px;}
+	
+	#contact_block_rel {width:380px;}
+	.contact_form input[type="text"], .contact_form textarea {width:78%;}
+	
+	#footer {bottom:0;}
+/* _____________ menu ______________ */
+	.menu {padding-bottom:20px;}
+	#nav {margin:0 auto;}
+	ul.navigation {float:none; margin:10px auto;}
+	.navigation li {margin-left:7px;padding:0 14px;font-size:14px;}
+	.navigation li:first-child {margin-left:0;}
+/* ____________ //menu _____________ */	
+
+	.container { width: 420px; }
+	
+	.grid_1,
+	.grid_2,
+	.grid_3,
+	.grid_4,
+	.grid_5,
+	.grid_6,
+	.grid_7,
+	.grid_8,
+	.grid_9,
+	.grid_10,
+	.grid_11,
+	.grid_12 {width:420px;}
+	
+	.fright{float:none;}
+	.fleft{float:none;}
+	
+}
+
+@media screen and (max-width : 479px) {
+	h1 {font-size:38px;line-height:48px;}
+	
+	#logo {text-align:center;}
+	
+	.padding_slide1 {padding:155px 0 30px;}
+	.effects_1 {display:none;}
+	#slide1 h1 {font-size:24px;line-height:26px;padding:15px 0;}
+	#slide1 h2 {padding:15px 5px;margin:0 0 10px 0;font-size:14px;line-height:20px;}
+	#top_socials {margin-top:40px;}
+	
+	#slide2 .team_inf {width:193px !important;margin:-6px auto 0;}
+	
+	#filters li {margin-bottom:10px;}
+	
+	.padding_slide3 {padding:45px 0 30px;}
+	#slide3 p, #slide5 p, #slide7 p {font-size:24px;line-height:28px;}
+	
+	.gallery-list {margin-left:33px;}
+	
+	.padding_slide5 {padding:40px 0;}
+	
+	a.serv_inf {padding:118px 25px 20px; text-align:center;}
+	.serv_inf img {top:10px;left:50%;margin:0 0 0 -49px;}
+	
+	.padding_slide7 {padding:100px 0 70px;}
+		
+	#contact_block_rel {width:295px;padding:30px 0 0 5px;}
+	.contact_form input[type="text"], .contact_form textarea {width:63%;}
+	
+	#footer {bottom:0;}
+	
+/* _____________ menu ______________ */
+	#nav {margin:0;}
+	ul.navigation {padding-bottom:15px;}
+	.navigation li {margin-left:7px;padding:0 5px;font-size:12px;}
+	.navigation li:first-child {margin-left:0;}
+/* ____________ //menu _____________ */	
+	.container { width: 300px; }
+
+	.grid_1,
+	.grid_2,
+	.grid_3,
+	.grid_4,
+	.grid_5,
+	.grid_6,
+	.grid_7,
+	.grid_8,
+	.grid_9,
+	.grid_10,
+	.grid_11,
+	.grid_12 {
+		width:300px;
+	}
+	
+	.fright{float:none;}
+	.fleft{float:none;}
+
+}
+
+@media screen and (max-width : 400px) {
+	.navigation li {font-size:11px;}
+	
+	
+	.jcarousel-skin-tango .jcarousel-item, .jcarousel-skin-tango .jcarousel-clip-horizontal {width:295px;}
+	#jcarousel .jcarousel-prev, #jcarousel .jcarousel-next {top:18%;}
+	
+	
+	#map_block {top:380px;}
+	
+	
+	.gallery-list {width:250px;}
+	
+	#map_block iframe {height:300px !important;}
+	
+	
+	#contact_block_rel .grid_4 {width:250px;}
+	
+	
+	.container { width: 295px; }
+
+	.grid_1,
+	.grid_2,
+	.grid_3,
+	.grid_4,
+	.grid_5,
+	.grid_6,
+	.grid_7,
+	.grid_8,
+	.grid_9,
+	.grid_10,
+	.grid_11,
+	.grid_12 {
+		width:295px;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

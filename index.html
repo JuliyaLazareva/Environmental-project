@@ -1,0 +1,380 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
+	<title>КИСЛОТНЫЕ ДОЖДИ</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/jcarousel.css" />
+	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
+	<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+	
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300,600,300italic' rel='stylesheet' type='text/css'>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+	<script src="js/jquery.isotope.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/sorting.js"></script>
+	<script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+	<script type="text/javascript" src="js/js.js"></script>
+	<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+	<script type="text/javascript" src="js/waypoints.min.js"></script>
+	
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<script src="js/respond.src.js"></script>
+	<![endif]-->
+	
+	<script type="text/javascript">
+		$(document).ready(function(){	
+			$("#ajax-contact-form").submit(function() {
+				var str = $(this).serialize();		
+				$.ajax({
+					type: "POST",
+					url: "contact_form/contact_process.php",
+					data: str,
+					success: function(msg) {
+					
+						if(msg == 'OK') {
+							result = '<div class="notification_ok">Your message has been sent. Thank you!</div>';
+							$("#fields").hide();
+						} else {
+							result = msg;
+						}
+						$('#note').html(result);
+					}
+				});
+				return false;
+			});
+		});		
+	</script>
+	
+</head>
+
+<body>
+
+<div class="menu">	
+	<div class="container clearfix">
+
+		<!-- <div id="logo" class="fleft">
+			<a href="#"><img src="images/logo.png"></a>
+		</div> -->
+		
+		<div id="nav" class="fright">
+			<ul class="navigation">
+				<!-- <li data-slide="1">Причины</li> -->
+				<li data-slide="2">Причины</li>
+				<li data-slide="4">Последствия</li>
+				<li data-slide="6">ВосстановЛение</li>
+				<li data-slide="10">Информация</li>
+			</ul>
+		</div>
+	
+	</div>
+</div>
+
+
+<div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
+	<div class="effect_2 padding_slide1">
+		<div class="container clearfix">
+			<div id="content" class="grid_12">
+				<h1>КИСЛОТНЫЕ<span> ДОЖДИ</span></h1>
+				<h2>Кислотные осадки (дожди, туманы, снег) – это осадки, кислотность которых выше нормальной. Мерой кислотности является значение pH (водородный показатель). Шкала значения pH идет от 02 (крайне высокая кислотность), через 7 (нейтральная среда) до 14 (щелочная среда), причем нейтральная точка (чистая вода) имеет pH=7.</h2>
+				<a class="button first_btn" title="" data-slide="2"></a>
+				
+				<!-- <div id="portf_btn">
+					<a class="button second_btn" title="" data-slide="4">Информация</a>
+				</div> -->
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+		
+		<div id="content" class="grid_12">
+			<h3><span>Причины</span></h3>
+			<h4>Причины кислотных дождей – извержения вулканов, землетрясения, природные пожары, молнии и некоторые другие процессы на уровне микроорганизмом. Из-за них в атмосферу выделяется диоксид серы и оксид азота.  Но именно деятельность человека является причиной большинства выбросов диоксида серы, а именно:</h4>
+		</div>
+		<div id="content" class="grid_7">
+			<p class="morbi_text">1. Сжигание топлива в промышленности и на электростанциях; </p>
+			<p>2.Выхлопные газы транспортных средств – образуют половину выбросов оксида азота;</p>
+			<p>3. Интенсивное животноводство – производит аммиак из разложения органического вещества.
+			</p>
+		</div>
+		<div id="content" class="grid_5 omega">
+			<div id="jcarousel">
+				<ul id="mycarousel" class="jcarousel-skin-tango">
+					<li>
+						<img src="images/img2.jpg" />
+					</li>
+					<li>
+						<img src="images/img3.jpg" />
+					</li>
+					<li>
+						<img src="images/img4.jpg" />
+					</li>
+					<li>
+						<img src="images/img5.jpg" />
+					</li>
+					<li>
+						<img src="images/img6.jpg" />
+					</li>
+					<div class="clear"></div>
+				</ul>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div id="content" class="grid_12">
+			<!-- <h5><span>Последствия кислотных дождей</span></h5> -->
+		</div>
+		<div class="clear"></div>
+		
+		
+		<div class="clear"></div>
+	</div>
+</div>
+
+
+
+<div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
+	<div class="effect_2 padding_slide3">
+		<div class="container clearfix">
+		
+			<div id="content" class="grid_12">
+				<p>Отрицательные последствия кислотных дождей</p>
+				<img class="icon_bg" src="images/icon10.png" />
+				<span>Кислотность дождя изменяется в сочетании с серной и азотной кислотой.</span>
+				<span>Поэтому, когда он падает на землю или воду, он меняет свои химические характеристики и ставит под угрозу баланс экосистем. Такое явление определяется, как подкисление окружающей среды. Приводит к серьезным последствиям.</span>
+			</div>
+		
+		</div>
+	</div>
+</div>
+
+
+
+<div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+		
+		<div id="content" class="grid_12">
+			<h3><span>Последствия</span></h3>
+			<h4>Влияние кислотных дождей на окружающую среду негативное. Ему подвержены следующие системы:
+				Океаны и моря с их флорой и фауной;
+				Внутренние воды, пресноводные источники с их обитателями;
+				Зеленые насаждения, делая их сильно уязвимыми;
+				На культурные и исторические памятники;
+				На человека – прямо или посредственно губя его здоровье.   
+				Океаны теряют биоразнообразие и продуктивность. Неестественное изменение кислотности морских вод наносит вред фитопланктону, источнику пищи для различных организмов и животных, который может изменить пищевую цепь и привести к вымиранию различных морских видов;
+				Внутренние воды также подкисляются очень быстрыми темпами, что вызывает особую обеспокоенность, поскольку, хотя только 1% воды планеты является пресной, в ней живет 40% рыб. Это подкисление увеличивает концентрацию ионов металлов – в основном ионов алюминия – что может привести к гибели многих рыб, земноводных и водных растений в подкисленных озерах. Кроме того, тяжелые металлы транспортируются в подземные воды, которые становятся непригодными для потребления.</h4>
+		</div>
+		<div class="clear"></div>
+		<div id="contenet">
+			<div id="options">
+				<ul id="filters" class="option-set" data-option-key="filter">
+					<li><a href="#filter" data-option-value="*" class="btn dark_btn selected">Все</a></li>
+					<li><a href="#filter" data-option-value=".category01">Флора</a></li>
+					<li><a href="#filter" data-option-value=".category02">Фауна</a></li>
+					</ul>
+				<div class="clear"></div>
+			</div>
+			<div class="overflow_hidden">
+				<div class="gallery-list">
+					<!-- portfolio_block -->
+					<div class="projects">                                  
+						<div class="grid_3 element category01" data-category="category01">
+							<div class="hover_img">
+								<img src="images/img1.jpg" alt="Влияние на флору" />
+								<span class="portfolio_zoom"><a href="images/img1.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+								<!-- <img src="images/img2.jpg" alt="Влияние на флору" />
+								<span class="portfolio_zoom"><a href="images/img2.jpg" rel="prettyPhoto[portfolio1]"></a></span> -->
+								<!-- <span class="portfolio_link"><a href="#">View item</a></span> -->
+							</div> 
+							<div class="item_description">
+								<h6></h6>
+								
+							</div>
+						</div>
+						<div class="grid_3 element category02" data-category="category02">
+							<div class="hover_img">
+								<img src="images/img2.jpg" alt="Влияние на фауну" />
+								<span class="portfolio_zoom"><a href="images/2.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+								<!-- <span class="portfolio_link"><a href="#">View item</a></span> -->
+							</div> 
+							<div class="item_description">
+								<h6></h6>
+								
+							</div>
+						</div>
+					
+						<div class="clear"></div>
+					</div>   
+					<!-- //portfolio_block -->   
+				</div>
+			</div>
+		</div>
+	
+	</div>
+</div>
+
+
+<div class="slide" id="slide5" data-slide="5" data-stellar-background-ratio="0.5">
+	<div class="effect_2 padding_slide5">
+		<div class="container clearfix">
+		
+			<div id="content" class="grid_12">
+				<p>Пути решения проблемы кислотных дождей</p>
+				<!-- <img class="icon_bg" src="images/icon11.png" /> -->
+				<span>Основной упор необходимо сосредоточить на источниках образования кислотных дождей, на которые человек в силах повлиять.  Речь идет о следующих мерах:
+
+					1.Очистка выхлопных и дымовых труб;
+					2.Восстановление поврежденных сред;
+					3.Массовое внедрение альтернативных источников энергии.</span>
+				<span>Большая часть электроэнергии, обеспечивающей современные потребности населения планеты, поступает от сжигания ископаемых видов топлива, таких как нефть, природный газ и уголь, которые генерируют оксиды азота (NOх) и диоксид серы (SO2) в качестве основных источников кислотных дождей. Сжигание угля в основном обеспечивает выбросы SO2, а выбросы NOх в основном происходят от другого ископаемого топлива.
+
+					Промывка и использование угля с низким содержанием серы, оснащение производств устройствами, известными как «скрубберы», могут обеспечить техническое решение для выбросов SO2. Десульфуризация или очистка дымовых газов позволяет удалить 95% SO2 из газов, покидающих дымовые трубы. Электростанции также могут перейти на использование топлива, которое выделяет гораздо меньше SO2, такого как природный газ, вместо сжигания угля. Эти методы относятся к стратегиям сокращения выбросов.
+					
+					Аналогичным образом, выбросы NOх при сжигании автомобильного топлива снижаются за счет использования каталитических нейтрализаторов. Каталитические нейтрализаторы установлены на выхлопной трубе, чтобы уменьшить выбросы NOх. Улучшение качества бензина, который сгорает, также позволяет уменьшить выбросы газов NOх.</span>
+			</div>
+		
+		</div>
+	</div>
+</div>
+
+
+
+<div class="slide" id="slide6" data-slide="6" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+		
+		<div id="content" class="grid_12">
+			<h3><span>ВосстановЛение</span></h3>
+			<h4>Восстановить всегда тяжелее, чем испортить</h4>
+		</div>
+		<div class="clear"></div>
+		<div class="grid_6">
+			<a href="#" class="serv_inf">
+				<!-- <img class="serv_icon" src="images/icon1.png" />
+				<img class="serv_icon_h" src="images/icon1_h.png" /> -->
+				<p>Процесс известкования</p>
+				Процесс, называемый известкованием, в котором используется известняк или известь, является практикой, позволяет восстановить ущерб, нанесенный кислотными дождями озерам, рекам и ручьям. Добавление извести в поверхностные воды уравновешивает кислотность. <br>
+				<br>
+				<br>
+				<div class="clear"></div>
+			</a>
+		</div>
+		<div class="grid_6 omega">
+			<a href="#" class="serv_inf">
+				<!-- <img class="serv_icon" src="images/icon2.png" />
+				<img class="serv_icon_h" src="images/icon2_h.png" /> -->
+				<p>Данный процесс</p>
+				Этот процесс широко используется, например, в Швеции, для поддержания оптимального уровня кислотности воды. Несмотря на то, что это дорогостоящий метод, его необходимо применять неоднократно. Кроме того, он предлагает только краткосрочное решение, но помогает восстановить водные формы жизни, защищает их от гибели.
+				<div class="clear"></div>
+			</a>
+		</div>
+		<div class="grid_6">
+			<a href="#" class="serv_inf">
+				<!-- <img class="serv_icon" src="images/icon3.png" />
+				<img class="serv_icon_h" src="images/icon3_h.png" /> -->
+				<p>Альтернативные источники энергии</p>
+				Помимо ископаемого топлива, существует широкий спектр альтернативных источников энергии, которые могут генерировать электроэнергию. К ним относятся следующие виды энергии: ветра, от геотермальных источников, солнечная, атомная, гидроэнергетика.
+				<div class="clear"></div>
+			</a>
+		</div>
+		<div class="grid_6 omega">
+			<a href="#" class="serv_inf">
+				<!-- <img class="serv_icon" src="images/icon4.png" />
+				<img class="serv_icon_h" src="images/icon4_h.png" /> -->
+				<p>Альтернативная элекроэнергия</p>
+				Использование этих источников энергии может предложить эффективные альтернативы электроэнергии вместо использования ископаемого топлива. Топливные элементы, природный газ и аккумуляторы также могут заменить использование ископаемого топлива в качестве более чистых источников. 
+				<div class="clear"></div>
+			</a>
+		</div>
+		<div class="clear"></div>
+	
+	</div>
+</div>
+
+
+<div class="slide" id="slide7" data-slide="7" data-stellar-background-ratio="0.5">
+	<div class="effect_2 padding_slide7">
+		<div class="container clearfix">
+		
+			<div id="content" class="grid_12">
+				<p>плюсы и минусы альтернативных источников электроэнергии</p>
+				<!-- 	<img class="icon_bg" src="images/icon12.png" /> -->
+				<span>Несмотря на то, что все указанные источники имеют экологические и экономические издержки, а также выгоды, они не устойчивые. Поэтому традиционные виды остаются актуальными.</span>
+				<span>Поэтому четвертый путь решения проблемы кислотных дождей – индивидуальные, государственные и международные действия. Миллионы людей прямо и косвенно способствуют выбросам SO2 и NOх. Для смягчения этой проблемы требуется повышение их осведомленности об энергосбережении и способах сокращения выбросов.
+
+					В их силах выключать света или электроприборы, когда они не используются, отдавать предпочтение в пользу общественного транспорта, а также оснащать домохозяйства энергоэффективными электрическими приборами. Тем, кто нуждается в личном автомобиле, необходимо переключаться на использование гибридных транспортных средств или машин с низким уровнем выбросов NOх.</span>
+			</div>
+		
+		</div>
+	</div>
+</div>
+
+
+
+<div class="slide" id="slide10" data-slide="10" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+		
+		<div id="content" class="grid_12">
+			<h3><span>КОНТАКТЫ</span></h3>
+			<h4>По всем вопросам и сотрудничеству звонить или писать на почту. Все контактные данные предоставленны ниже.</h4>
+		</div>
+		<div class="clear"></div>
+		<div id="contact_block_rel">
+			<div class="grid_5">
+				<div class="contact_form">  
+					<div id="note"></div>
+					<div id="fields">
+						<form id="ajax-contact-form" action="">
+							<input type="text" name="name" value="" placeholder="Имя" />
+							<input type="text" name="subject" value="" placeholder="Телефон" />
+							<input type="text" name="email" value="" placeholder="Email" />
+							<textarea name="message" id="message" placeholder="Сообщение"></textarea>
+							<div class="clear"></div>
+							<input type="reset" class="contact_btn" value="Очистить" />
+							<input type="submit" class="contact_btn" value="Отправить" />
+							<div class="clear"></div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="grid_4 contact_det_block">
+				<h5>КОНТАКТЫ:</h5>
+				<!-- <p>Ut tincidunt, erat eu pulvinar molestie, justo nisl pharetra erat, sit amet malesuada diam turpis cursus mauris. Donec ac tempor libero.</p>
+				<p>Proin sit amet sollicitudin ante. Donec sodales, metus non congue aliquam, neque mauris suscipit sapien, a ultrices lectus mauris vel ipsum. Cras</p> -->
+				<ul class="foot_block_intouch">
+					<li class="touch_phone"><p>+375(29)708-22-28</p></li>
+					<li class="touch_clock"><p>Понедельник - Суббота 9:00 - 18:00</p></li>
+					<li class="touch_mail"><a href="mailto:haythor@mail.ru">haythor@mail.ru</a></li>
+					<li class="touch_mail"><a href="mailto:morgana.2020.l@gmail.com">morgana.2020.l@gmail.com</a></li>
+					<li class="touch_mail"><a href="mailto:haythor@tut.by">haythor@tut.by</a></li>
+					<!-- <li class="touch_site"><a href="#">www.lorem.com</a></li> -->
+					<li class="touch_adress"><p>Республика Беларусь, г.Минск, ул.Казинца,91</p></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	
+	<div id="map_block"><iframe width="100%" height="722" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://yandex.by/maps/157/minsk/?ll=27.509202%2C53.848428&mode=search&oid=1018469854&ol=biz&source=wizgeo&utm_medium=maps-desktop&utm_source=serp&z=17.52"></iframe></div>
+	
+</div>
+
+
+<div id="footer">
+	<div class="container clearfix">
+		<div class="copyright">Лазарева Юлия 34ТП &copy; МГКЭ | 
+		<div id="back_top"><a class="button" title="" data-slide="1">ВВЕРХ</a></div><br>
+	</div>
+</div>
+
+
+</body>
+</html>
